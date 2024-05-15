@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stylish Navbar with Hour Effect</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .slide-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Previous and next buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+   /* Basic CSS for product box container */
+   .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .product-box {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .product-price {
+    font-size: 14px;
+    color: #888;
+  }
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">My Navbar</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<div class="slideshow-container">
+    <!-- Slides -->
+    <div class="mySlides">
+      <img class="slide-img" src="ps.jpeg" alt="Slide 1">
+    </div>
+  
+    <div class="mySlides">
+      <img class="slide-img" src="nat.webp" alt="Slide 2">
+    </div>
+  
+    <div class="mySlides">
+      <img class="slide-img" src="logo.webp" alt="Slide 3">
+    </div>
+  
+    <!-- Previous and Next buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="product-container">
+    <!-- Product Box 1 -->
+    <div class="product-box">
+      <img src="p11.jpeg" alt="Product 1">
+      <div class="product-title">Product 1</div>
+      <div class="product-price">$19.99</div>
+      <button>Add to Cart</button>
+    </div>
+  
+    <!-- Product Box 2 -->
+    <div class="product-box">
+      <img src="p1.jpeg" alt="Product 2">
+      <div class="product-title">Product 2</div>
+      <div class="product-price">$29.99</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-box">
+        <img src="p2.jpeg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-box">
+        <img src="p3.jpeg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="p4.jpeg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div> <div class="product-box">
+        <img src="p5.jpeg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div> <div class="product-box">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div> <div class="product-box">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-box">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-box">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div> <div class="product-box">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-box">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-price">$19.99</div>
+        <button>Add to Cart</button>
+      </div>
+    
+      <!-- Product Box 2 -->
+      <div class="product-box">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-price">$29.99</div>
+        <button>Add to Cart</button>
+      </div>
+     
+    <!-- Add more product boxes as needed -->
+  </div>
+ 
+<script>
+  // Get the current hour
+  const currentHour = new Date().getHours();
+  
+  // Change navbar style based on the hour
+  const nav = document.querySelector('nav');
+  if (currentHour >= 6 && currentHour < 12) {
+    // Morning style
+    nav.style.backgroundColor = '#55c';
+  } else if (currentHour >= 12 && currentHour < 18) {
+    // Afternoon style
+    nav.style.backgroundColor = '#f90';
+  } else {
+    // Evening style
+    nav.style.backgroundColor = '#333';
+  }
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+    // Function to handle adding items to the cart
+    function addToCart(productName, productPrice) {
+    // Example: Storing cart items in localStorage
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    cartItems.push({ name: productName, price: productPrice });
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+    alert('Product added to cart!');
+  }
+
+  // Function to navigate to the next page
+  function goToNextPage() {
+    // Redirect to the cart or checkout page
+    window.location.href = 'cart.html'; // Change 'cart.html' to the appropriate page URL
+  }
+
+  // Event listener for "Add to Cart" buttons
+  const addToCartButtons = document.querySelectorAll('.product-box button');
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const productBox = this.parentElement;
+      const productName = productBox.querySelector('.product-title').textContent;
+      const productPrice = productBox.querySelector('.product-price').textContent;
+      addToCart(productName, productPrice);
+    });
+  });
+
+  // Event listener for "Next Page" button
+  const nextPageButton = document.querySelector('.next-page-button');
+  nextPageButton.addEventListener('click', goToNextPage);
+</script>
+
+</body>
+</html>
+
